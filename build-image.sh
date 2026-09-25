@@ -13,7 +13,7 @@ CURRENT_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
 docker run --privileged --rm tonistiigi/binfmt --install all
 docker buildx rm container-builder || true
 docker buildx create --name container-builder --driver docker-container --bootstrap --use
-docker buildx build --platform linux/amd64 --build-arg BUILD_DATE=$CURRENT_DATE  --push -t sinfallas/base-bash-qa:latest --builder=container-builder -f Dockerfile .
+docker buildx build --platform linux/arm64,linux/arm/v7,linux/amd64 --build-arg BUILD_DATE=$CURRENT_DATE  --push -t sinfallas/base-bash-qa:latest --builder=container-builder -f Dockerfile .
 docker buildx rm container-builder
 docker system prune -af
 docker builder prune -af
