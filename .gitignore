@@ -1,0 +1,22 @@
+# =========================
+# Editores y SO
+# =========================
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.suo
+
+# =========================
+# Entornos Locales
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs y Reportes Locales
+# =========================
+*.log
+coverage/
+test-results/

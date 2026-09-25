@@ -1,0 +1,20 @@
+# =========================
+# Control de Versiones
+# =========================
+.git/
+.gitignore
+
+# =========================
+# Archivos de Orquestación y Host
+# =========================
+build-image.sh
+README.md
+.dockerignore
+
+# =========================
+# Editores y SO
+# =========================
+.vscode/
+.idea/
+.DS_Store
+*.swp
