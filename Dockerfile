@@ -1,7 +1,7 @@
 ARG UBUNTU_VERSION=26.04
 FROM ubuntu:${UBUNTU_VERSION}
-LABEL org.opencontainers.image.authors="sinfallas@gmail.com"
-LABEL description="Entorno de QA automatizado para Bash"
+LABEL org.opencontainers.image.authors="Jesus Palencia <sinfallas@gmail.com> (Creado en Tecno Consultores)"
+LABEL org.opencontainers.image.description="Entorno de QA automatizado para Bash"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
