@@ -7,9 +7,7 @@ if [[ "$EUID" = "0" ]]; then
 	exit 1
 fi
 
-clear
 CURRENT_DATE=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
-
 docker run --privileged --rm tonistiigi/binfmt --install all
 docker buildx rm container-builder || true
 docker buildx create --name container-builder --driver docker-container --bootstrap --use
